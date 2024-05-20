@@ -9,7 +9,6 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
-        "barryvdh/laravel-ide-helper": "^2.13",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
@@ -45,8 +44,6 @@
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "@php artisan ide-helper:generate --tenant=tda",
-            "@php artisan ide-helper:meta --tenant=tda",
             "@php artisan horizon:publish --ansi --tenant=tda"
         ],
         "post-root-package-install": [
@@ -59,7 +56,6 @@
     "extra": {
         "laravel": {
             "dont-discover": [
-                "barryvdh/laravel-ide-helper"
             ]
         }
     },
