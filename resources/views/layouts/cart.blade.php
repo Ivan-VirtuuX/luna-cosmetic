@@ -21,7 +21,7 @@
     <footer>
         <div class="footer-top">
             <div
-                class="{{isset($container)  ? 'welcome-container' : 'container'}} d-flex justify-content-between align-items-center">
+                class="{{isset($container)  ? 'welcome-container' : 'container'}} d-flex justify-content-between align-items-center gap-4">
                 <span class="logo">LUNA</span>
                 <ul class="footer-links d-flex">
                     <li>

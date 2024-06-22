@@ -10,7 +10,7 @@
                     <h2 class="auth-form-title">Вход</h2>
 
                     <div class="auth-form-input-fields gap-4 d-flex flex-column align-items-center">
-                        <div>
+                        <div class="auth-form-input-container">
                             <input placeholder="Email" id="email" type="email"
                                    class="auth-form-input @error('email') is-invalid @enderror" name="email"
                                    value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -20,7 +20,7 @@
                         </span>
                             @enderror
                         </div>
-                        <div>
+                        <div class="auth-form-input-container">
                             <input placeholder="Пароль" id="password" type="password"
                                    class="auth-form-input @error('password') is-invalid @enderror" name="password"
                                    required autocomplete="current-password">
@@ -31,7 +31,7 @@
                             @enderror
                         </div>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between form-buttons-login">
                         <a href="/register" class="auth-form-register-link">Регистрация</a>
                         <button type="submit" class="auth-form-submit-btn">
                             Войти

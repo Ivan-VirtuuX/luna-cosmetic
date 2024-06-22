@@ -154,4 +154,3 @@
     </section>
     <script src="{{asset("scripts/cosmeticSurvey.js")}}"></script>
 @endsection
-

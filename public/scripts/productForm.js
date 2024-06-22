@@ -65,9 +65,7 @@ function toggleCartItem(button, id, title, desc, imageUrl, amount_info) {
                             .getAttribute("content"),
                     },
                 }
-            )
-                .then((response) => response.json())
-                .then((data) => console.log(data.message));
+            ).then((response) => response.json());
         }
     } else {
         cart.push({
@@ -118,8 +116,6 @@ const getSelectedAmount = () => {
     const selectedAmount = document.querySelector(
         'input[name="amount"]:checked'
     );
-
-    console.log(+selectedAmount.dataset.price);
 
     return {
         amount: selectedAmount.dataset.amount,
